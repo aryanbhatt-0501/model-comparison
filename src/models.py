@@ -34,11 +34,6 @@ def train_naive_bayes(X_train, y_train):
     model.fit(X_train, y_train)
     return model
 
-def train_random_forest(X_train, y_train):
-    model = RandomForestClassifier(random_state=42)
-    model.fit(X_train, y_train)
-    return model
-
 def evaluate_model(model, X_test, y_test):
     y_pred = model.predict(X_test)
 
